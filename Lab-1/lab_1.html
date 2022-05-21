@@ -6,27 +6,188 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./lab_1.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <title>Lab 1</title>
 </head>
 
 <body>
 
-    <header>
+    <header class="lab__desc">
         <h1>Lab # 1 :</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum inventore obcaecati cumque aut tenetur sit suscipit repudiandae soluta deserunt tempore.</p>
     </header>
 
-    <section>
+    <section class="main__section">
         <!-- Q1 Resume -->
-        <div class="resume main">
-            <h2>Q # 1 : Resume</h2>
+        <div class="resume ">
+            <h2 style="color: #ffa800;font-size: 25px;">Q # 1 : Resume</h2>
 
-            <div class="resume__container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, ratione?</div>
+            <div class="resume__container">
+                <header>
+                    <div class="img__container">
+                        <div>
+                            <img src="../assets/me__resume.jpg" alt="My Image">
+                        </div>
+                    </div>
+
+                    <div class="title__container">
+                        <div class="title">
+                            <h1>Shayan Jamil</h1>
+                            <h3>MERN Developer</h3>
+                            <p>Innovative MERN Developer with 8 months experience building and maintaining responsive websites in the mounting industry. Knowledgeable in user interface, testing, and debugging processes. Equipped with a diverse and promising
+                                skill-set. Proficient in JavaScript stack. Able to effectively self-manage during independent projects, as well as collaborate in a team setting.</p>
+                        </div>
+                        <div class="links">
+                            <span style="font-weight: bold;">Social Links :</span>
+                            <a href=" https://serene-caverns-78111.herokuapp.com/" target="_blank">Portfolio</a>
+                            <a href="https://github.com/ShayanJamil519" target="_blank">Github</a>
+                            <a href="https://www.linkedin.com/in/shayan-jamil-4b99051ba/" target="_blank">Linkedin</a>
+                        </div>
+                    </div>
+                </header>
+
+                <section class="resume__bottom">
+
+                    <div class="sidebar">
+
+                        <div class="div-1">
+                            <h2>Details</h2>
+                            <p>A1-56 Block A Naya Nazimabad</p>
+                            <p>Karachi, Pakistan</p>
+                            <p>001122334455</p>
+
+                            <a style="color: #246868;" href="shayanjamil500@gmail.com">shayanjamil500@gmail.com</a>
+                        </div>
+
+                        <div class="div-2">
+                            <h2>Technical Skills</h2>
+                            <div>
+                                <label for="reactjs">React.js</label>
+                                <progress id="reactjs" value="85" max="100" style="width:auto"> 85% </progress>
+                            </div>
+                            <div>
+                                <label for="nodejs">Node.js</label>
+                                <progress id="nodejs" value="70" max="100" style="width:auto"> 70% </progress>
+                            </div>
+                            <div>
+                                <label for="express.js">Express.js</label>
+                                <progress id="expressjs" value="75" max="100" style="width:auto"> 75% </progress>
+                            </div>
+                            <div>
+                                <label for="mongodb">MongoDB</label>
+                                <progress id="mongodb" value="80" max="100" style="width:auto"> 80% </progress>
+                            </div>
+                            <div>
+                                <label for="graphql">GraphQl</label>
+                                <progress id="graphql" value="60" max="100" style="width:auto"> 60% </progress>
+                            </div>
+                            <div>
+                                <label for="figma">Figma</label>
+                                <progress id="figma" value="50" max="100" style="width:auto"> 50% </progress>
+                            </div>
+                        </div>
+
+                        <div class="div-3">
+                            <h2>Interests</h2>
+                            <p>Web Development</p>
+                            <p>Mobile App Development</p>
+                            <p>Blockchain </p>
+                            <p>Networking</p>
+                            <p>Marketing</p>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="details">
+
+                        <div class="emp__history">
+
+                            <h2 style="margin-bottom: 10px;">
+                                <i class="fa-solid fa-house-laptop" style="font-size: 20px;"></i> Employment History</h2>
+                            <h3 style="margin-bottom: 4px;font-size: 16px;">MERN Stack Developer at <span>SoftSol.</span> ,Karachi </h3>
+                            <h5 style="color: #959595;font-size: 12px;">May 2021, Present</h5>
+                            <ul style="margin-left: 40px;margin-top: 10px;">
+                                <li>
+                                    Collaborated with team and made Soft Sol. official website.
+                                </li>
+                                <li> Implemented clients designs and transformed them into responsive template.
+                                </li>
+                                <li> Debugged some complex projects and provided possible solutions.</li>
+                                <li> Communicate with team on a weekly basis on Slack and Zoom to make strategies for future projects.</li>
+                            </ul>
+                        </div>
+
+                        <div class="projects">
+                            <h2>
+                                <i class="fa-solid fa-code" style="font-size: 20px;"></i> Projects
+                            </h2>
+                            <h5 style="margin-top: 2px;color: #9595af;">Oct, 2020 Present</h5>
+
+
+
+
+                            <h4>&#128073; Portfolio :</h4>
+                            <p>
+                                Created my own personal website which defines me , showcase my work and contact information so that I can work for people.
+                            </p>
+
+
+                            <h4>&#128073; Medical Store :</h4>
+                            <p>
+                                Designed a medical store template for practicing User Interface. It comprises of appointment , about us, contracts with hospitals and contact information sections.
+                            </p>
+
+                            <h4>&#128073; Hair Salon :</h4>
+                            <p>
+                                Designed another hair salon template for practicing User Interface. It includes home page, about, services, FAQs and contact sections.
+                            </p>
+
+                            <h4>&#128073; Ecommerce Store:</h4>
+                            <p>
+                                Created Full Stack ecommerce website using MERN stack. The functionalities includes Searching, Filtering, CRUD operations, Authentication and Authorization and Payment Integration
+                            </p>
+
+                            <h4>&#128073; Pharmacy Management System :</h4>
+                            <p>
+                                It was our university group based project in second semester. We have used C# .NET and Microsoft SQL server management studio in this project . It consists of Administrator, Pharmacists and Customer sections .
+                            </p>
+
+
+
+
+                        </div>
+
+
+                        <div class="education">
+                            <h2>
+                                <i class="fa-solid fa-graduation-cap" style="font-size: 20px;"></i> Education
+                            </h2>
+                            <h4 style="margin-top: 5px;">Software Enginnering Student at NED University Of Engineering and Technology, Karachi.</h4>
+                            <p style="margin: 3px 0;color: #959595;">CGPA | 3.66 / 4 |</p>
+                            <p style="margin: 7px 0 4px 0;">
+                                &#128073; Courses I have studied at the university so far :</p>
+                            <div style="display: flex; justify-content:space-between; flex-wrap:wrap;">
+                                <p>📚 Programming Fundamentals</p>
+                                <p>📚 Object Oriented Programming</p>
+                                <p>📚 Data Structures and Algorithms</p>
+                                <p>📚 Database Management Systems</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+            </div>
 
         </div>
 
         <!-- Q2 Nested Lists -->
-        <div class="nestedList main">
+        <div class="nestedList ">
             <h2> Q # 2 : Nested List</h2>
             <div class="nestedList_container">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, et?
