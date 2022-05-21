@@ -65,7 +65,7 @@ a {
 .resume {
     width: 100%;
     background-color: white;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     padding: 1rem;
 }
 
@@ -202,19 +202,23 @@ a {
 
 .nestedList {
     width: 100%;
-    height: 150vh;
+    height: 90vh;
     border: 2px solid red;
     background-color: white;
     margin-bottom: 2rem;
 }
 
-.nestedList>h2 {
-    text-align: center;
-    padding: 15px 0;
+.nestedList_container {
+    width: 70%;
+    margin: auto;
+    padding: 15px 35px;
+    border: 2px solid #959595;
 }
 
+.firstNestedList {
+    margin-bottom: 20px;
+}
 
-/* ----------- */
-
-
-/* Borders */
+.nestedList_container h1 {
+    margin-bottom: 20px;
+}
