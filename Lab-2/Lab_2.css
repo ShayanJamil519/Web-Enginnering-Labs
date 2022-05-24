@@ -21,45 +21,54 @@
 
 .main__section {
     width: 100%;
-    height: 150vh;
-    /* height: auto; */
+    /* height: 150vh; */
+    height: auto;
     position: relative;
     background-color: #1f1301;
     padding: 2rem 10rem;
 }
 
-.table-1 {
+.table-1,
+.table-2,
+.table-3 {
     width: 100%;
     background-color: white;
     margin-bottom: 4rem;
     padding: 2rem 0 4rem 0;
 }
 
-.table-1>h2 {
+.table-1>h2,
+.table-2>h2,
+.table-3>h2 {
     text-align: center;
     padding: 0 0 15px 0;
     color: #ffa800;
     font-size: 25px;
 }
 
-.table-1 .table-1__container {
+.table-1 .table-1__container,
+.table-2 .table-2__container,
+.table-3 .table-3__container {
     width: 70%;
     margin: auto;
 }
 
-.table-1 .table-1__container table {
+.table-1 .table-1__container table,
+.table-2 .table-2__container table,
+.table-3 .table-3__container table {
     text-align: center;
     width: 100%;
-    height: 60vh;
+    /* height: 60vh; */
     border: 5px solid black;
 }
 
-.table-1 .table-1__container .headings {
+.table-1 .table-1__container .headings,
+.table-2 .table-2__container .headings,
+.table-3 .table-3__container .headings {
     font-weight: bold;
     font-size: 20px;
 }
 
-table,
 tr,
 th,
 td {
