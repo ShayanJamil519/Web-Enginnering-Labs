@@ -21,7 +21,6 @@
 
 .main__section {
     width: 100%;
-    /* height: 150vh; */
     height: auto;
     position: relative;
     background-color: #1f1301;
@@ -58,7 +57,6 @@
 .table-3 .table-3__container table {
     text-align: center;
     width: 100%;
-    /* height: 60vh; */
     border: 5px solid black;
 }
 
