@@ -1,0 +1,132 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .lab__desc {
+        background-color: #1f1301;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        padding: 15px 0 5px 0;
+        color: #ffa800;
+        border-top: 5px solid #ffa800;
+        border-bottom: 5px solid #ffa800;
+    }
+    
+    .lab__desc h1 {
+        margin-bottom: 10px;
+    }
+    
+    .main__section {
+        width: 100%;
+        height: auto;
+        position: relative;
+        background-color: #1f1301;
+        padding: 2rem 5rem;
+    }
+    
+    .journal {
+        width: 100%;
+        background-color: white;
+        margin-bottom: 4rem;
+        padding: 2rem 0 4rem 0;
+    }
+    
+    .journal>h2 {
+        text-align: center;
+        padding: 0 0 15px 0;
+        color: #ffa800;
+        font-size: 25px;
+    }
+    
+    .journal__container {
+        width: 85%;
+        margin: auto;
+        border: 2px solid lightgrey;
+        padding: 10px;
+    }
+    
+    .journal__container>header {
+        background-color: #55d5ff;
+        color: #2d839d;
+        text-align: right;
+        padding: 15px 5px 5px 0;
+        height: 70px;
+        margin-bottom: 5px;
+    }
+    
+    .journal__container__bottom {
+        display: flex;
+    }
+    
+    .journal__container__bottom .sidebar {
+        flex: 20%;
+        height: fit-content;
+        margin-right: 5px;
+        padding: 20px 12px;
+        background-color: #73deff;
+        border: 5px ridge #73deff;
+    }
+    
+    .journal__container__bottom .sidebar h2 {
+        color: #2d839d;
+        font-size: 33px;
+        margin-bottom: 18px;
+    }
+    
+    .journal__container__bottom .sidebar ul {
+        padding-left: 20px;
+        color: #2d839d;
+        font-weight: bold;
+    }
+    
+    .journal__container__bottom .sidebar ul li:nth-child(2) {
+        color: #fff;
+        margin: 5px 0;
+    }
+    
+    .journal__container__bottom .article__container {
+        flex: 80%;
+    }
+    
+    .article__container .article {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        margin-bottom: 10px;
+        background-color: #ebfbff;
+        border: 5px ridge #ebfbff;
+    }
+    
+    .article__container .article .article__content {
+        flex: 80%;
+    }
+    
+    .article__container .article .article__content h2 {
+        color: #2d839d;
+        margin-bottom: 15px;
+    }
+    
+    .article__container .article .article__content span {
+        border-bottom: 3px dashed #2d839d;
+        margin-right: 5px;
+    }
+    
+    .article__container .article .article__content p {
+        color: #2d839d;
+        font-size: 17px;
+    }
+    
+    .article__container .article .article__img {
+        flex: 20%;
+        height: 180px;
+        padding-top: 40px;
+    }
+    
+    .article__container .article .article__img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
