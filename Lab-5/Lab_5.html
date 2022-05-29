@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Lab_5.css">
+    <title>Lab 5</title>
+    <!-- --------------- -->
+    <script src="./script_5.js"></script>
+    <!-- --------------------- -->
+</head>
+
+<body>
+    <header class="lab__desc">
+        <h1>Lab # 5:</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, ratione!</p>
+    </header>
+
+    <section class="main__section">
+
+        <!-- Q1 -->
+        <div class="calculator">
+            <h2> Q # 1 : Basic Calculator</h2>
+            <div class="calculator__container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Select Operation: 👇</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Addition</td>
+                            <td><button onclick="add()">+</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>Subtraction</td>
+                            <td><button onclick="sub()">-</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>Multiplication</td>
+                            <td><button onclick="mul()">x</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>Division</td>
+                            <td><button onclick="div()">/</button></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <p id="result1"></p>
+
+            </div>
+        </div>
+
+
+        <!-- Q2 -->
+        <div class="temperature">
+            <h2> Q # 2 : Temperature Conversion</h2>
+            <div class="temperature__container">
+                <table>
+                    <thead>
+                        <tr>
+
+                            <th colspan="2">--Conversion--</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Degree Fahrenheit to Celsius</td>
+                            <td><button onclick="Fah_To_Cel()">F to C</button></td>
+                        </tr>
+                        <tr>
+                            <td>Degree Celsius to Fahrenheit </td>
+                            <td><button onclick="Cel_To_Fah()">C to F</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p id="result2"></p>
+            </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="operations">
+            <h2> Q # 3 : Random Operations</h2>
+            <div class="operations__container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Select Any One Option : 👇</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><button onclick="Generate_Table()">Generate Table</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="Calculate_Power()">Calculate Power</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="Generate_Sequence()">Generate Sequence</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="Generate_Even_Odd_No()">Generate Odd No. / Even No.</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p id="result3"></p>
+            </div>
+        </div>
+
+
+    </section>
+
+</body>
+
+</html>
