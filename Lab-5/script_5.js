@@ -22,12 +22,12 @@ function sub() {
 
 function mul() {
     let { a, b } = Prompt1()
-    document.getElementById("result1").innerHTML = `Result :  The Subtraction of ${a} and ${b} is : ${a - b}`
+    document.getElementById("result1").innerHTML = `Result :  The Multiplication of ${a} and ${b} is : ${a * b}`
 }
 
 function div() {
     let { a, b } = Prompt1()
-    document.getElementById("result1").innerHTML = `Result :  The Division of ${a} and ${b} is : ${a / b}`
+    document.getElementById("result1").innerHTML = `Result :  The Division of ${a} and ${b} is : ${(a / b).toFixed(2)}`
 }
 
 // Q2 Script
