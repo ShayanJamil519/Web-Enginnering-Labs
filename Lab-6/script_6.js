@@ -15,6 +15,7 @@ let logoDiv = document.createElement('div')
 logoDiv.style.cssText = `
 display:flex;
 align-items:center;
+cursor:pointer;
 `
 let logoDivIcon = document.createElement('i')
 logoDivIcon.setAttribute('class', 'fa-solid fa-user')
@@ -93,6 +94,7 @@ color: white;
 padding: 15px 20px;
 display: flex;
 border-radius:5px;
+cursor:pointer;
 `
 
 div1.innerHTML = `<i class="fa-solid fa-phone"></i>`
@@ -118,7 +120,7 @@ border-radius:5px;
 `
 
 let div2H2 = document.createElement('h2')
-div2H2.innerHTML = "Stunnig 6 Bed House In The Heart Of The City"
+div2H2.innerHTML = "Stunning 6 Bed House In The Heart Of The City"
 div2H2.style.cssText = `
 margin-bottom: 10px;
 `
@@ -323,3 +325,77 @@ section3Container.appendChild(section3Content)
 section3.appendChild(section3Container)
 
 document.body.appendChild(section3)
+
+// Q2
+function Encryption() {
+    let digit = prompt("Enter a 4 Digit Number For Encryption")
+    let a = digit.toString(10).split('').map(Number);
+
+    if (a.length > 4 || a.length < 4 || a === "") {
+        alert("Please Enter 4 Digit Number")
+    }
+    for (let i = 0; i < a.length; i++) {
+        a[i] = (a[i] + 7) % 10;
+    }
+    // Swapping 1st Digit With 3rd Digit
+    let temp = a[0];
+    a[0] = [2]
+    a[2] = temp
+        // Swapping 2nd Digit With 4rth Digit
+    temp = a[1];
+    a[1] = [3]
+    a[3] = temp
+
+    document.getElementById("result1").innerHTML = ` Plain Data : ${digit} <br/>
+    Encrypted Data : ${a.join(',')}`
+
+}
+
+// Q3
+function Decryption() {
+
+    var enc = window.prompt("Enter encrypted integer: ");
+    var digits = enc.toString(10).split('').map(Number);
+
+    var temp = digits[0];
+    digits[0] = digits[2];
+    digits[2] = temp;
+    temp = digits[1];
+    digits[1] = digits[3];
+    digits[3] = temp;
+
+    for (var i = 0; i < digits.length; i++) {
+        if (digits[i] >= 7) {
+            digits[i] = digits[i] - 7;
+        } else {
+            digits[i] = digits[i] + 3;
+        }
+    }
+    document.getElementById("result2").innerHTML = ` Decrypted Data : ${enc} <br/>
+    Plain Data : ${digits.join('')}`
+}
+
+// Q4
+
+function Vowels__Consonants() {
+    let vowels = ['A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u']
+    let user = prompt("Enter a Character :")
+
+    if (vowels.includes(user)) {
+        document.getElementById("result3").innerHTML = `${user} is a Vowel`
+    } else {
+        document.getElementById("result3").innerHTML = `${user} is a Consonant`
+    }
+
+}
+
+function Random__Numbers() {
+    let result = [];
+    let elem = document.getElementById("result4")
+    for (let i = 1; i <= 20; i++) {
+        result[i] = Math.floor(Math.random() * 100)
+        let text = document.createTextNode(` ${result[i]} , `)
+        elem.appendChild(text)
+        elem.style = "white-space:pre;"
+    }
+}
