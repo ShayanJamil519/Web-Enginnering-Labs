@@ -27,6 +27,9 @@
     padding: 2rem 10rem;
 }
 
+
+/* Q1 */
+
 .calculator {
     width: 100%;
     background-color: white;
@@ -53,12 +56,13 @@
 
 .calculator__container table td button {
     width: 100%;
+    padding: 3px;
+    font-size: 15px;
+    font-weight: bold;
     cursor: pointer;
 }
 
-:is(.calculator__container) #result1,
-#result2,
-#result3 {
+.calculator__container #result1 {
     padding: 5px 10px;
     margin: auto;
     margin-top: 10px;
@@ -66,7 +70,7 @@
     border: 2px solid lightgray;
 }
 
-:is(.calculator__container, .temperature__container, .operations__container) td,
+.calculator__container td,
 th {
     border: 2px solid black;
     padding: 4px;
@@ -74,65 +78,3 @@ th {
 
 
 /* Q2 */
-
-.temperature {
-    width: 100%;
-    background-color: white;
-    margin-bottom: 4rem;
-    padding: 2rem 0;
-}
-
-.temperature>h2 {
-    text-align: center;
-    padding: 0 0 15px 0;
-    color: #ffa800;
-    font-size: 25px;
-}
-
-.temperature__container {
-    padding: 10px;
-}
-
-.temperature__container table {
-    border: 5px solid black;
-    width: 30%;
-    margin: auto;
-}
-
-.temperature__container table td button {
-    width: 100%;
-    cursor: pointer;
-}
-
-
-/* Q3 */
-
-.operations {
-    width: 100%;
-    background-color: white;
-    margin-bottom: 4rem;
-    padding: 2rem 0;
-}
-
-.operations>h2 {
-    text-align: center;
-    padding: 0 0 15px 0;
-    color: #ffa800;
-    font-size: 25px;
-}
-
-.operations__container {
-    padding: 10px;
-}
-
-.operations__container table {
-    border: 5px solid black;
-    width: 30%;
-    margin: auto;
-}
-
-.operations__container table td button {
-    width: 100%;
-    padding: 5px;
-    cursor: pointer;
-}

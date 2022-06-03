@@ -48,7 +48,7 @@ section::before {
     width: 100%;
     height: 100%;
     background-color: #ffa800;
-    clip-path: circle(22% at right 82%);
+    clip-path: circle(22% at right 95%);
 }
 
 section::after {
