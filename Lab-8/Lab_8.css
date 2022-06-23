@@ -129,6 +129,26 @@
         border: 2px solid black;
         padding: 3px 0;
     }
+    /* Q4 */
+    
+    .class-program {
+        width: 100%;
+        background-color: white;
+        margin-bottom: 2rem;
+        padding: 2rem 0;
+    }
+    
+    .class-program>h2 {
+        text-align: center;
+        padding: 0 0 15px 0;
+        color: #ffa800;
+        font-size: 25px;
+    }
+    
+    .class-program__container {
+        padding: 10px;
+        text-align: center;
+    }
     /* ------------------------ */
     
     #result1,
@@ -142,6 +162,7 @@
         border: 2px solid lightgray;
     }
     
-    #result2 {
+    #result2,
+    #result3 {
         text-align: justify;
     }

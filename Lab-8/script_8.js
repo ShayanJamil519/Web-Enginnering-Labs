@@ -62,3 +62,33 @@ button.onclick = () => {
     let table = document.querySelector('table')
     table.appendChild(tbody)
 }
+
+// Q4
+class FAN {
+    constructor(speed, type, company) {
+        this.speed = speed
+        this.type = type
+        this.company = company
+    }
+}
+
+class RoomCooler extends FAN {
+    constructor(speed, type, company, size, TurboCooling) {
+        super(speed, type, company)
+        this.size = size
+        this.TurboCooling = TurboCooling
+
+    }
+    show() {
+        document.getElementById("result3").innerHTML = `
+        Speed : ${this.speed} </br>
+        Type : ${this.type} </br>
+        Company : ${this.company} </br>
+        Size : ${this.size} </br>
+        Turbo Cooling : ${this.TurboCooling} 
+        `
+    }
+}
+
+const rc = new RoomCooler(500, "A", "Pak Fans", "24x12", "High")
+rc.show()
