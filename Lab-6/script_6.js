@@ -343,7 +343,7 @@ function Encryption() {
     a[2] = temp
         // Swapping 2nd Digit With 4rth Digit
     temp = a[1];
-    a[1] = [3]
+    a[1] = a[3]
     a[3] = temp
 
     document.getElementById("result1").innerHTML = ` Plain Data : ${digit} <br/>

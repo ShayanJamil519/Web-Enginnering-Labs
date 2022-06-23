@@ -1,0 +1,147 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    
+    a,
+    button {
+        cursor: pointer;
+    }
+    /* Q1 */
+    
+    .lab__desc {
+        background-color: #1f1301;
+        width: 100%;
+        height: 80px;
+        text-align: center;
+        padding: 10px;
+        color: #ffa800;
+        border-top: 3px solid #ffa800;
+        border-bottom: 3px solid #ffa800;
+    }
+    
+    .lab__desc h1 {
+        margin-bottom: 5px;
+    }
+    
+    .main__section {
+        width: 100%;
+        height: auto;
+        position: relative;
+        background-color: #1f1301;
+        padding: 2rem 3rem;
+    }
+    
+    .map-operations {
+        width: 100%;
+        background-color: white;
+        margin-bottom: 4rem;
+        padding: 2rem 0;
+    }
+    
+    .map-operations>h2 {
+        text-align: center;
+        padding: 0 0 15px 0;
+        color: #ffa800;
+        font-size: 25px;
+    }
+    
+    .map-operations__container {
+        padding: 10px;
+        text-align: center;
+    }
+    /* Q2 */
+    
+    .collection {
+        width: 100%;
+        background-color: white;
+        margin-bottom: 4rem;
+        padding: 2rem 0;
+    }
+    
+    .collection>h2 {
+        text-align: center;
+        padding: 0 0 15px 0;
+        color: #ffa800;
+        font-size: 25px;
+    }
+    
+    .collection__container {
+        padding: 10px;
+        text-align: center;
+    }
+    /* Q3 */
+    
+    .sales-calculator {
+        width: 100%;
+        background-color: white;
+        margin-bottom: 4rem;
+        padding: 2rem 0;
+    }
+    
+    .sales-calculator>h2 {
+        text-align: center;
+        padding: 0 0 15px 0;
+        color: #ffa800;
+        font-size: 25px;
+    }
+    
+    .sales-calculator__container {
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .sales-calculator__container .inputs {
+        width: 30%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .inputs label {
+        font-size: 1.1rem;
+    }
+    
+    .inputs input {
+        padding: 5px;
+        margin-bottom: 7px;
+    }
+    
+    .inputs #submit {
+        margin-top: 10px;
+        font-size: 16px;
+        padding: 5px;
+        font-weight: 700;
+    }
+    
+    table {
+        width: 60%;
+        margin: 0 auto;
+        border: 2px solid black;
+        margin-top: 3rem;
+    }
+    
+    tr,
+    th,
+    td {
+        border: 2px solid black;
+        padding: 3px 0;
+    }
+    /* ------------------------ */
+    
+    #result1,
+    #result2,
+    #result3,
+    #result4 {
+        line-height: 25px;
+        padding: 5px 10px;
+        margin: 10px auto;
+        width: fit-content;
+        border: 2px solid lightgray;
+    }
+    
+    #result2 {
+        text-align: justify;
+    }
