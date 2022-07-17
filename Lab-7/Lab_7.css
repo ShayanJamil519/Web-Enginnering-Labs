@@ -113,3 +113,40 @@ th {
     width: fit-content;
     border: 2px solid lightgray;
 }
+
+
+/* Q3 */
+
+.carClass {
+    width: 100%;
+    background-color: white;
+    margin-bottom: 4rem;
+    padding: 2rem 0;
+}
+
+.carClass>h2 {
+    text-align: center;
+    padding: 0 0 15px 0;
+    color: #ffa800;
+    font-size: 25px;
+}
+
+.carClass__container {
+    padding: 10px;
+    text-align: center;
+}
+
+.carClass__container button {
+    padding: 10px 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+:is(.carClass__container) #result4 {
+    padding: 5px 10px;
+    margin: 10px auto;
+    width: fit-content;
+    border: 2px solid lightgray;
+}

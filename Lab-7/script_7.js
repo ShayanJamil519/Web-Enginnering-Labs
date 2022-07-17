@@ -40,6 +40,7 @@ const div = () => {
   )}`
 }
 
+
 // Q2 Script
 class Room {
     constructor(length, breath, height) {
@@ -48,103 +49,53 @@ class Room {
         this.height = height
     }
 
-    setLength(l) {
-        this.length = l
-    }
-    getLength() {
-        return this.length
-    }
-    setHeight(h) {
-        this.height = h
-    }
-    getHeight() {
-        return this.height
-    }
-    setBreath(b) {
-        this.breath = b
-    }
-    getBreath() {
-        this.breath
-    }
-
-
     calculateArea() {
-            document.getElementById('result2').innerHTML = `The area of room is  ${this.getLength()*this.getBreath()*this.getHeight()}`
-        }
-        // calculateArea() {
-        //     document.getElementById('result2').innerHTML = `Total Area of Room : ${
-        //   this.getLength() * this.getBreath()
-        // }`
-        // }
+        document.getElementById('result2').innerHTML = `The area of room is  ${
+      this.length * this.breath
+    }`
+    }
+
     calculateVolume() {
         document.getElementById('result3').innerHTML = `Total Volume of Room : ${
-      this.getLength() * this.getBreath() * this.getHeight()
+      this.length * this.breath * this.height
     }`
     }
 }
 
-// r1.calculateArea()
-// r1.calculateVolume()
+let r1 = new Room(4, 5, 6)
 
-
-document.getElementById("btn1").addEventListener("click", () => {
-    let r1 = new Room(4, 5, 6)
+document.getElementById('btn1').addEventListener('click', () => {
     r1.calculateArea()
-
 })
 
-
-// let btn1 = document.getElementById("btn1")
-// btn1.addEventListener("click", () => {
-//     let r1 = new Room(4, 5, 6)
-//     r1.calculateArea()
-//     console.log(
-//         r1.calculateArea()
-
-//     )
-// })
-
-let btn2 = document.getElementById("btn2")
-btn2.addEventListener("click", () => {
+document.getElementById('btn2').addEventListener('click', () => {
     r1.calculateVolume()
 })
 
-// console.log(r1.calculateArea())
+// Q3 Script
 
-// ------------------------
-// class Room {
-//     constructor(length, breadth, height) {
-//         this.length = length;
-//         this.breadth = breadth;
-//         this.height = height;
-//     }
-//     setLength(l) {
-//         this.length = l;
-//     }
-//     getLength() {
-//         return this.length;
-//     }
-//     setBreadth(b) {
-//         this.breadth = b;
-//     }
-//     getBreadth() {
-//         return this.breadth;
-//     }
-//     setHeight(h) {
-//         this.height = h;
-//     }
-//     getHeight() {
-//         return this.height;
-//     }
+class Car {
+    constructor(brandName, priceNew, color, odometer) {
+        this.brandName = brandName
+        this.priceNew = priceNew
+        this.color = color
+        this.odometer = odometer
+    }
+    getPriceAfterUse = () => {
+        let priceAfterUse = this.priceNew * (1 - (this.odometer / 600000))
+        return Math.floor(priceAfterUse)
+    }
+    updateMileage = (traveledDistance) => {
+        this.odometer += traveledDistance
+    }
+    outputDetails = () => {
+        document.getElementById("result4").innerHTML = `Brand Name: ${this.brandName} <br> Price New: ${this.priceNew} <br> Price After Use: ${this.getPriceAfterUse()} <br> Color Name: ${this.color} <br> Odometer: ${this.odometer}`
+    }
+}
 
-//     calculateArea() {
-//         document.write(`The area of room is  ${this.getLength()*this.getBreadth()*this.getHeight()} <br>`)
-//     }
-//     calculateVolume() {
-//         document.write(`The volume of room is  ${this.getLength()*this.getBreadth()}`)
-//     }
-// }
+let c1 = new Car("Toyota", 1000000, "black", 0)
+c1.updateMileage(2000)
 
-// const r1 = new Room(10, 5, 5);
-// r1.calculateArea();
-// r1.calculateVolume();
+document.getElementById('btn3').addEventListener('click', () => {
+    c1.outputDetails()
+})
