@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.lab__desc {
+    background-color: #1f1301;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    padding: 10px;
+    color: #ffa800;
+    border-top: 3px solid #ffa800;
+    border-bottom: 3px solid #ffa800;
+}
+
+.lab__desc h1 {
+    margin-bottom: 5px;
+}
+
+.main__section {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: #1f1301;
+    padding: 2rem 20rem;
+}
+
+
+/* Q1 */
+
+.circleClass-program {
+    width: 100%;
+    background-color: white;
+    margin-bottom: 4rem;
+    padding: 2rem 0;
+}
+
+.circleClass-program>h2 {
+    text-align: center;
+    padding: 0 0 15px 0;
+    color: #ffa800;
+    font-size: 25px;
+}
+
+.circleClass-program__container {
+    padding: 10px;
+    text-align: center;
+}
+
+:is(.circleClass-program__container) #result1,
+#result2,
+#result3 {
+    padding: 5px 10px;
+    margin: 10px auto;
+    width: fit-content;
+    text-align: left;
+    border: 2px solid lightgray;
+}
+
+
+/* Q2 */
+
+.employeeClass-program {
+    width: 100%;
+    background-color: white;
+    margin-bottom: 4rem;
+    padding: 2rem 0;
+}
+
+.employeeClass-program>h2 {
+    text-align: center;
+    padding: 0 0 15px 0;
+    color: #ffa800;
+    font-size: 25px;
+}
+
+.employeeClass-program__container {
+    padding: 10px;
+    text-align: center;
+}

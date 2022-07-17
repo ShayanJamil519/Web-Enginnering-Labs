@@ -40,7 +40,6 @@ const div = () => {
   )}`
 }
 
-
 // Q2 Script
 class Room {
     constructor(length, breath, height) {
@@ -82,18 +81,24 @@ class Car {
         this.odometer = odometer
     }
     getPriceAfterUse = () => {
-        let priceAfterUse = this.priceNew * (1 - (this.odometer / 600000))
+        let priceAfterUse = this.priceNew * (1 - this.odometer / 600000)
         return Math.floor(priceAfterUse)
     }
     updateMileage = (traveledDistance) => {
         this.odometer += traveledDistance
     }
     outputDetails = () => {
-        document.getElementById("result4").innerHTML = `Brand Name: ${this.brandName} <br> Price New: ${this.priceNew} <br> Price After Use: ${this.getPriceAfterUse()} <br> Color Name: ${this.color} <br> Odometer: ${this.odometer}`
+        document.getElementById('result4').innerHTML = `Brand Name: ${
+      this.brandName
+    } <br> Price New: ${
+      this.priceNew
+    } <br> Price After Use: ${this.getPriceAfterUse()} <br> Color Name: ${
+      this.color
+    } <br> Odometer: ${this.odometer}`
     }
 }
 
-let c1 = new Car("Toyota", 1000000, "black", 0)
+let c1 = new Car('Toyota', 1000000, 'black', 0)
 c1.updateMileage(2000)
 
 document.getElementById('btn3').addEventListener('click', () => {
