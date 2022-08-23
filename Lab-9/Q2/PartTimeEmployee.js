@@ -14,7 +14,7 @@ export default class PartTimeEmployee extends Employee {
         Name: ${this.name} </br>
         Employee Number: ${this.empno} </br>
         Address : ${this.address} </br>
-        Salary: ${this.salary} </br>
+        Salary:  ${this.salary} $ </br>
         Designation: ${this.designation} </br>
         No. of working hours: ${this.workingHours} hrs </br>
         Probation Period : ${this.probationPeriod} months </br>
